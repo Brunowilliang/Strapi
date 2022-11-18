@@ -20,13 +20,14 @@ module.exports = ({ env }) => ({
     },
     email: {
       config: {
-        provider: 'sendgrid',
+        provider: 'sendgrid', // For community providers pass the full package name (e.g. provider: 'strapi-provider-email-mandrill')
         providerOptions: {
           apiKey: env('SENDGRID_API_KEY'),
         },
         settings: {
-          defaultFrom: 'eu@brunowilliang.com',
-          defaultReplyTo: 'eu@brunowilliang.com',
+          defaultFrom: 'eu@brunowillian.com',
+          defaultReplyTo: 'eu@brunowillian.com',
+          testAddress: 'eu@brunowillian.com',
         },
       },
     },
