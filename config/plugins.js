@@ -27,7 +27,6 @@ module.exports = ({ env }) => ({
         settings: {
           defaultFrom: 'eu@brunowillian.com',
           defaultReplyTo: 'eu@brunowillian.com',
-          testAddress: 'eu@brunowillian.com',
         },
       },
     },
